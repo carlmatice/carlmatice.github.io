@@ -4,306 +4,177 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JobFit | Workforce Readiness for Central Virginia</title>
-    <meta
-      name="description"
-      content="JobFit is an independent workforce development organization connecting students and career changers to hands-on IT pathways and internship opportunities."
-    />
+    <meta name="description" content="JobFit connects high-school students, college students, and career changers in Central Virginia with career exploration, internships, real projects, and one-to-one coaching." />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="icon" type="image/png" href="images/jobfit-character-logo.png" />
   </head>
-  <body data-page="home">
+  <body data-page="home" class="one-page">
+    <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header">
       <div class="container header-inner">
-        <a class="brand" href="index.html" aria-label="JobFit home">
-          <span class="brand-mark">JF</span>
-          <span class="brand-title">JobFit</span>
-        </a>
-        <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-label="Toggle site navigation">
-          Menu
-        </button>
-        <nav class="site-nav" data-site-nav aria-label="Primary navigation">
+        <a class="brand" href="#home" aria-label="JobFit home"><img class="brand-character" src="images/jobfit-character-logo.png" width="310" height="314" alt="" /><span class="brand-title">JobFit</span></a>
+        <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle site navigation">Menu</button>
+        <nav id="primary-nav" class="site-nav" data-site-nav aria-label="Primary navigation">
           <ul class="nav-list">
-            <li><a class="nav-link" data-page-link="home" href="index.html">Home</a></li>
-            <li><a class="nav-link" data-page-link="offerings" href="offerings.html">What We Offer</a></li>
-            <li><a class="nav-link" data-page-link="partners" href="partners.html">Partners</a></li>
-            <li><a class="nav-link" data-page-link="testimonials" href="testimonials.html">Testimonials</a></li>
-            <li><a class="nav-link" data-page-link="news" href="news.html">Articles and News</a></li>
-            <li><a class="nav-link" data-page-link="contact" href="contact.html">Contact</a></li>
+            <li><a class="nav-link" href="#home">Home</a></li>
+            <li><a class="nav-link" href="#programs">Programs</a></li>
+            <li><a class="nav-link" href="#stories">Stories</a></li>
+            <li><a class="nav-link" href="#partners">Partners</a></li>
+            <li><a class="nav-link" href="#contact">Contact</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
-    <main>
-      <section class="hero">
-        <div class="container hero-grid">
-          <div class="hero-text reveal">
-            <span class="chip">Independent by Design</span>
-            <h1 class="hero-title">JobFit</h1>
-            <p>
-              JobFit is focused on teaching high school students, college students, and career changers the trade of
-              IT. We use a person's desire to learn, willingness to work hard, and their aptitude of learning
-              technology to equip them with job-ready skills.
-            </p>
+    <main id="main" tabindex="-1">
+      <section id="home" class="hero" aria-labelledby="hero-title" tabindex="-1">
+        <div class="container">
+          <div class="hero-text">
+            <h1 id="hero-title" class="hero-title">JobFit</h1>
+            <p class="hero-lead">Multiple pathways. One support system.</p>
+            <p>JobFit is focused on teaching high school students, college students, and career changers professionalism and job-ready skills. We use a person's desire to learn and willingness to work hard to equip them with job-ready skills.</p>
+            <p>JobFit combines exploration, real project work, and career coaching so learners can move from curiosity to confidence and job readiness.</p>
             <div class="hero-actions">
-              <a class="btn btn-primary" href="offerings.html">Explore Programs</a>
-              <a class="btn btn-secondary" href="partners.html">Meet Our Partners</a>
+              <a class="btn btn-primary" href="#programs">Explore Programs</a>
+              <a class="btn btn-secondary" href="#partners">Meet Our Partners</a>
             </div>
           </div>
-          <aside class="hero-panel reveal" aria-label="Program highlights">
-            <span class="kicker">Program Snapshot</span>
-            <h3>Multiple pathways. One support system.</h3>
-            <p class="muted">
-              JobFit combines exploration, real project work, and career coaching so learners can move from curiosity to
-              confidence.
-            </p>
-            <div class="metric-grid">
-              <div class="metric">
-                <strong>STEM</strong>
-                Early exposure and career discovery
-              </div>
-              <div class="metric">
-                <strong>Internships</strong>
-                Hands-on team experience
-              </div>
-              <div class="metric">
-                <strong>Capstone</strong>
-                Real stakeholder project delivery
-              </div>
-              <div class="metric">
-                <strong>Coaching</strong>
-                Resume, interview, and growth support
-              </div>
-            </div>
-          </aside>
+          <figure class="hero-photo">
+            <img src="images/jobfit-collaboration.jpg" width="646" height="430" alt="Three people collaborating in a shared workspace." fetchpriority="high" />
+          </figure>
         </div>
       </section>
 
-      <section class="section">
-        <div class="container">
-          <div class="section-head reveal">
+      <section class="section mission" aria-labelledby="mission-title">
+        <div class="container mission-grid">
+          <div class="section-head">
             <span class="eyebrow">Why JobFit Exists</span>
-            <h2>Built for workforce readiness in Central Virginia.</h2>
-            <p class="muted">
-              JobFit was founded to bridge education and employment through practical, local career pathways that serve
-              students and career changers first.
-            </p>
+            <h2 id="mission-title">Built for workforce readiness in Central Virginia.</h2>
+            <p class="muted">JobFit was founded to bridge education and employment through practical, local career pathways that serve students and career changers first.</p>
           </div>
-          <div class="card-grid">
-            <article class="card reveal">
-              <span class="kicker">Local Impact</span>
-              <h3>Regional mission, regional outcomes</h3>
-              <p>
-                We align with local schools, colleges, and employers to strengthen the talent pipeline for the region,
-                not for a single company.
-              </p>
-            </article>
-            <article class="card reveal">
-              <span class="kicker">Education First</span>
-              <h3>Learner growth before placement</h3>
-              <p>
-                Students develop confidence, career clarity, and practical skills before and during internship
-                opportunities.
-              </p>
-            </article>
-            <article class="card reveal">
-              <span class="kicker">Scalable Design</span>
-              <h3>Partner network, not a single host</h3>
-              <p>
-                JobFit internships are coordinated by JobFit and delivered across multiple host organizations as the
-                network grows.
-              </p>
-            </article>
+          <div>
+            <h3>Regional mission, regional outcomes</h3>
+            <p>We align with local schools, colleges, workforce organizations, employers, and community partners to strengthen the talent pipeline for the region, not for a single company.</p>
+            <h3>Learning before and during placement</h3>
+            <p>Students develop confidence, career clarity, and practical skills before and during internship opportunities.</p>
+            <h3>Partner network, not a single host</h3>
+            <p>JobFit internships are coordinated by JobFit and delivered across multiple host organizations as the network grows.</p>
           </div>
+        </div>
+        <div class="container">
+          <figure class="hero-media media-pending" data-asset="overview-video" aria-labelledby="overview-caption">
+            <div class="media-slot"><p>JobFit overview video</p></div>
+            <figcaption id="overview-caption" class="approval-note">Overview video awaiting public-use approval. Poster, captions, and transcript required before publishing.</figcaption>
+          </figure>
         </div>
       </section>
 
-      <section class="section-tight">
+      <section id="programs" class="section" aria-labelledby="programs-title" tabindex="-1">
         <div class="container">
-          <div class="section-head reveal">
+          <div class="section-head">
             <span class="eyebrow">What We Offer</span>
-            <h2>Three connected pathways into technology careers.</h2>
+            <h2 id="programs-title">Four connected pathways into job readiness.</h2>
           </div>
-          <div class="card-grid">
-            <article class="card reveal">
-              <span class="kicker">STEM Exposure</span>
+          <div class="program-list">
+            <article class="program-row">
+              <span class="program-number" aria-hidden="true">01</span>
               <h3>Early exploration for high school learners</h3>
-              <p>
-                In partnership with local academies and colleges, students explore cybersecurity, software, IT support,
-                and design to discover where they fit best.
-              </p>
+              <div>
+                <p>In partnership with local academies and colleges, students explore cybersecurity, software, IT support, and design to discover where they fit best.</p>
+              </div>
             </article>
-            <article class="card reveal">
-              <span class="kicker">Internship Network</span>
+            <article class="program-row">
+              <span class="program-number" aria-hidden="true">02</span>
               <h3>Hands-on experience across partner organizations</h3>
-              <p>
-                JobFit delivers mentored internships with leading technology employers, nonprofit teams, and civic
-                partners, including CloudFit Software.
-              </p>
+              <p>JobFit delivers mentored internships with leading employers, nonprofit teams, and civic partners.</p>
             </article>
-            <article class="card reveal">
-              <span class="kicker">Capstone Studio</span>
-              <h3>Senior teams solving real technical challenges</h3>
-              <p>
-                Capstone cohorts collaborate on scoped projects with industry and community stakeholders to build
-                portfolio-level outcomes.
-              </p>
+            <article class="program-row">
+              <span class="program-number" aria-hidden="true">03</span>
+              <h3>Senior teams solving real challenges</h3>
+              <p>Capstone cohorts collaborate on scoped projects with industry and community stakeholders to build portfolio-level outcomes.</p>
+            </article>
+            <article class="program-row">
+              <span class="program-number" aria-hidden="true">04</span><h3>Intentional coaching</h3>
+              <p>JobFit provides one-to-one coaching, resume preparation, interview support, and professional development, with guidance for ongoing career growth.</p>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="section">
+      <section id="stories" class="section stories-section" aria-labelledby="stories-title" tabindex="-1">
         <div class="container">
-          <div class="section-head reveal">
-            <span class="eyebrow">Partner Network</span>
-            <h2>Regional employers, educators, and community partners fuel the mission.</h2>
-            <p class="muted">
-              JobFit partners with schools, workforce organizations, and employers that each contribute distinct
-              mentorship, project access, and learning opportunities.
-            </p>
-          </div>
-          <div class="logo-grid">
-            <article class="logo-item reveal">
-              <div class="logo-badge">CF</div>
-              <h3>CloudFit Software</h3>
-              <p class="muted">Employer partner supporting select internship tracks and mentorship.</p>
-            </article>
-            <article class="logo-item reveal">
-              <div class="logo-badge">CV</div>
-              <h3>CVCC</h3>
-              <p class="muted">Academic partner preparing students for credential and career pathways.</p>
-            </article>
-            <article class="logo-item reveal">
-              <div class="logo-badge">LU</div>
-              <h3>Liberty University</h3>
-              <p class="muted">Capstone collaboration and talent development support.</p>
-            </article>
-            <article class="logo-item reveal">
-              <div class="logo-badge">SP</div>
-              <h3>Spark Innovation Center</h3>
-              <p class="muted">Youth-focused camp and cybersecurity learning partner.</p>
-            </article>
-          </div>
-          <p class="reveal" style="margin-top: 1rem;">
-            <a class="btn btn-secondary" href="partners.html">View All Partners</a>
-          </p>
-        </div>
-      </section>
-
-      <section class="section-tight">
-        <div class="container">
-          <div class="section-head reveal">
-            <span class="eyebrow">Testimonials</span>
-            <h2>Stories centered on confidence, skill growth, and career direction.</h2>
-          </div>
+          <div class="section-head"><span class="eyebrow">Testimonials</span><h2 id="stories-title">Stories centered on confidence, skill growth, and career direction.</h2></div>
           <div class="testimonial-grid">
-            <article class="testimonial-card reveal">
-              <blockquote>
-                "Interning at CloudFit let me test whether software engineering was right for me. Working with C# and
-                TypeScript gave me real-world context and confirmed this is the career I want."
-              </blockquote>
+            <article class="testimonial-card">
+              <blockquote>"[Interning] let me test whether software engineering was right for me. Working with C# and TypeScript gave me real-world context and confirmed this is the career I want."</blockquote>
               <p class="quote-meta"><strong>Aditya</strong> | Software Development Intern</p>
             </article>
-            <article class="testimonial-card reveal">
-              <blockquote>
-                "Vulnerability scanning, scripting, and incident response gave me practical cybersecurity experience.
-                Teamwork, communication, and inclusivity were major parts of what made this internship so valuable."
-              </blockquote>
+            <article class="testimonial-card">
+              <blockquote>"Vulnerability scanning, scripting, and incident response gave me practical cybersecurity experience. Teamwork, communication, and inclusivity were major parts of what made this internship so valuable."</blockquote>
               <p class="quote-meta"><strong>Dakota</strong> | Cyber Security Intern</p>
             </article>
-            <article class="testimonial-card reveal">
-              <blockquote>
-                "I came from public health with limited tech background, and this internship gave me hands-on
-                experience plus mentorship that changed my career direction and continued into full-time work."
-              </blockquote>
+            <article class="testimonial-card">
+              <blockquote>"Working as an intern gave me real-world projects and access to knowledgeable professionals who helped me level up. The experience and environment gave me a strong boost on my road toward success in this field."</blockquote>
+              <p class="quote-meta"><strong>Jimmy</strong> | Cyber Security Intern</p>
+            </article>
+            <article class="testimonial-card">
+              <blockquote>"As someone who has always loved technology, this internship deepened that passion. I gained real hands-on experience and saw how these opportunities can help learners at any starting point while also supporting the local community."</blockquote>
+              <p class="quote-meta"><strong>Saniyah</strong> | Software Development Intern</p>
+            </article>
+            <article class="testimonial-card">
+              <blockquote>"I chose this internship to learn future-facing cloud work, and I also grew in leadership. Managing team responsibilities and contributing in a lively environment made me feel part of something bigger than myself."</blockquote>
+              <p class="quote-meta"><strong>Jack</strong> | UI/UX Intern</p>
+            </article>
+            <article class="testimonial-card">
+              <blockquote>"Our capstone team rotated project manager responsibilities, worked with clients, and delivered a real-world solution using tools like C#. We had supportive guidance while still being hands-off enough to learn by doing."</blockquote>
+              <p class="quote-meta"><strong>Chris C.</strong> | Software Engineering Capstone</p>
+            </article>
+            <article class="testimonial-card">
+              <blockquote>"I entered as a career changer from a different world than tech, and JobFit gave me the opportunity, skills, and support to break into software engineering. That growth eventually led to full-time work and the chance to coach others."</blockquote>
+              <p class="quote-meta"><strong>Chris D.</strong> | Software Development Intern</p>
+            </article>
+            <article class="testimonial-card">
+              <blockquote>"I came from public health with limited tech background, and this internship gave me hands-on experience plus mentorship that changed my career direction and continued into full-time work."</blockquote>
               <p class="quote-meta"><strong>Laurel</strong> | Program Management Intern</p>
             </article>
           </div>
-          <p class="reveal" style="margin-top: 1rem;">
-            <a class="btn btn-secondary" href="testimonials.html">Read More Stories</a>
-          </p>
+          <div class="people-gallery">
+            <figure><img src="images/jobfit-participant-group.jpg" width="646" height="433" alt="A group gathered on the steps outside a building." loading="lazy" /></figure>
+            <figure><img src="images/jobfit-community-gathering.jpg" width="648" height="432" alt="A large group gathered together on gym bleachers." loading="lazy" /></figure>
+          </div>
+          <template id="approved-story-template">
+            <article class="testimonial-card">
+              <figure class="story-person"><img class="participant-headshot" width="80" height="80" loading="lazy" data-field="headshot" /><figcaption><p class="quote-meta" data-field="name-and-role"></p></figcaption></figure>
+              <blockquote data-field="approved-quote"></blockquote>
+            </article>
+          </template>
         </div>
       </section>
 
-      <section class="section">
+      <section id="partners" class="section" aria-labelledby="partners-title" tabindex="-1">
         <div class="container">
-          <div class="section-head reveal">
-            <span class="eyebrow">Articles and News</span>
-            <h2>Updates from the field.</h2>
+          <div class="section-head"><span class="eyebrow">Partner Network</span><h2 id="partners-title">Regional employers, educators, and community partners fuel the mission.</h2><p class="muted">JobFit partners with schools, colleges, workforce organizations, employers, and community partners that each contribute distinct mentorship, project access, and learning opportunities.</p></div>
+          <p class="approval-note">Partner logos, website links, and the complete current inventory are awaiting confirmation.</p>
+          <div class="partner-groups" data-asset="partner-directory">
+            <section class="partner-group" aria-labelledby="education-partners"><h3 id="education-partners">Schools &amp; Colleges</h3><ul class="partner-grid" data-partner-group="education"><li>Central Virginia Community College</li><li>Liberty University</li><li>Regional STEM Academies</li></ul></section>
+            <section class="partner-group" aria-labelledby="employer-partners"><h3 id="employer-partners">Employers</h3><ul class="partner-grid" data-partner-group="employers"><li>CloudFit Software</li><li>Employer Council</li></ul></section>
+            <section class="partner-group" aria-labelledby="community-partners"><h3 id="community-partners">Workforce &amp; Community</h3><ul class="partner-grid" data-partner-group="community"><li>Boys and Girls Club</li><li>City of Lynchburg</li><li>Economic Development Partners</li><li>Jubilee Family Development Center</li><li>Office of Economic Development &amp; Tourism</li><li>Regional Nonprofit Network</li><li>Spark Innovation Center</li></ul></section>
           </div>
-          <div class="news-grid">
-            <article class="news-card reveal">
-              <img class="news-thumb" src="images/JobFit-article1.png" alt="Workforce Development article image" loading="lazy" />
-              <div class="news-content">
-                <h3>
-                  <a href="https://www.opportunitylynchburg.com/workforce-development-and-what-it-actually-looks-like/" target="_blank" rel="noopener noreferrer">
-                    Workforce Development And What It Actually Looks Like
-                  </a>
-                </h3>
-                <p class="muted">How coordinated school-to-work pathways build momentum for learners.</p>
-              </div>
-            </article>
-            <article class="news-card reveal">
-              <img class="news-thumb" src="images/JobFit-article2.png" alt="JobFit summer program graduates article image" loading="lazy" />
-              <div class="news-content">
-                <h3>
-                  <a href="https://www.opportunitylynchburg.com/jobfit-summer-program-concludes-with-15-workready-graduates/" target="_blank" rel="noopener noreferrer">
-                    JobFit Summer Program Concludes with 15 Work-Ready Graduates
-                  </a>
-                </h3>
-                <p class="muted">Fifteen participants completed projects spanning support, design, and security.</p>
-              </div>
-            </article>
-            <article class="news-card reveal">
-              <img class="news-thumb" src="images/JobFit-article3.png" alt="JobFit hosts 15 summer interns article image" loading="lazy" />
-              <div class="news-content">
-                <h3>
-                  <a href="https://www.opportunitylynchburg.com/jobfit-hosts-15-summer-interns-focused-on-talent-retention/" target="_blank" rel="noopener noreferrer">
-                    JobFit Hosts 15 Summer Interns, Focused on Talent Retention
-                  </a>
-                </h3>
-                <p class="muted">A growing partner network increases placement options across the region.</p>
-              </div>
-            </article>
-          </div>
-          <p class="reveal" style="margin-top: 1rem;">
-            <a class="btn btn-secondary" href="news.html">Open Newsroom</a>
-          </p>
+          <template id="approved-partner-template">
+            <li><a class="partner-link" target="_blank" rel="noopener noreferrer"><span class="partner-logo"><img loading="lazy" width="180" height="90" alt="" data-field="logo" /></span><span data-field="name"></span><span class="visually-hidden"> (opens in a new tab)</span></a></li>
+          </template>
         </div>
       </section>
-
     </main>
 
-    <footer class="site-footer">
+    <footer id="contact" class="site-footer" aria-labelledby="contact-title" tabindex="-1">
       <div class="container footer-inner">
-        <div class="footer-brand">
-          <a class="brand" href="index.html" aria-label="JobFit home">
-            <span class="brand-mark">JF</span>
-            <span class="brand-title">JobFit</span>
-          </a>
-          <p>
-            JobFit is an independent workforce development organization serving students and career changers across
-            Central Virginia.
-          </p>
-        </div>
-        <div class="footer-col">
-          <h3>Get in Touch</h3>
-          <p>863 Church Street, Lynchburg, VA</p>
-          <p>Email: <a href="mailto:hello@jobfit.online">hello@jobfit.online</a></p>
-        </div>
-        <div class="footer-col">
-          <h3>Follow JobFit</h3>
-          <ul>
-            <li><a href="https://www.instagram.com/jobfitlyh/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-          </ul>
-        </div>
+        <div class="footer-brand"><a class="brand" href="#home" aria-label="JobFit home"><img class="brand-wordmark" src="images/jobfit-wordmark-white.png" width="1203" height="412" alt="JobFit" loading="lazy" /></a><p>JobFit is an independent workforce development organization serving students and career changers across Central Virginia.</p></div>
+        <div class="footer-col"><h2 id="contact-title">Get in Touch</h2><p>Email: <a href="mailto:hi@jobfit.online">hi@jobfit.online</a></p></div>
+        <div class="footer-col" data-asset="social-links"><h2>Follow JobFit</h2><p class="approval-note">Official Instagram and LinkedIn links awaiting confirmation.</p></div>
       </div>
-      <div class="container footer-bottom">
-        <p>JobFit © <span class="js-year"></span>. All Rights Reserved.</p>
-      </div>
+      <div class="container footer-bottom"><p>JobFit &copy; <span class="js-year">2026</span>. All Rights Reserved.</p><p class="review-status">Stakeholder review draft. Image publication permissions, video, stories, partner inventory, and social links require approval before release.</p></div>
     </footer>
-
     <script src="main.js" defer></script>
   </body>
 </html>
